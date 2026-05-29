@@ -162,7 +162,10 @@ body {
 
 .cta-buttons {
     display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 1rem;
+    flex-wrap: wrap;
     margin-top: 2rem;
 }
 
@@ -217,6 +220,14 @@ body {
     
     .cta-buttons {
         flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    
+    .cta-buttons .btn {
+        width: 100%;
+        max-width: 300px;
+        text-align: center;
     }
 }
 
@@ -568,6 +579,14 @@ body {
 
 .cta .btn-primary:hover {
     background-color: rgba(255, 255, 255, 0.9);
+}
+
+.cta .cta-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
 }
 
 .cta .btn-secondary {
