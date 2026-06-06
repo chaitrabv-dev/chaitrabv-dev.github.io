@@ -634,8 +634,108 @@ body {
     opacity: 0.8;
 }
 
-/* Responsive */
+/* Resume nav button */
+.nav-resume-btn {
+    padding: 6px 14px;
+    border: 2px solid var(--primary-color);
+    border-radius: 6px;
+    color: var(--primary-color) !important;
+    font-weight: 600;
+    font-size: 13px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.nav-resume-btn:hover {
+    background-color: var(--primary-color);
+    color: white !important;
+}
+
+/* Outline button for hero */
+.btn-outline {
+    background-color: transparent;
+    color: var(--text-secondary-light);
+    border-color: var(--border-light);
+    border: 2px solid var(--border-light);
+}
+
+.btn-outline:hover {
+    background-color: var(--bg-secondary-light);
+    border-color: var(--text-secondary-light);
+}
+
+@media (prefers-color-scheme: dark) {
+    .btn-outline {
+        color: var(--text-secondary-dark);
+        border-color: var(--border-dark);
+    }
+    .btn-outline:hover {
+        background-color: var(--bg-tertiary-dark);
+    }
+}
+
+/* Project links */
+.project-links {
+    margin-top: 1rem;
+    display: flex;
+    gap: 0.75rem;
+}
+
+.project-link {
+    display: inline-block;
+    padding: 6px 14px;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: 600;
+    text-decoration: none;
+    background-color: var(--primary-color);
+    color: white;
+    transition: opacity 0.2s ease;
+}
+
+.project-link:hover {
+    opacity: 0.85;
+}
+
+/* Fun project card accent */
+.project-card--fun {
+    border-color: var(--accent-color);
+}
+
+.project-card--roost {
+    border-color: var(--secondary-color);
+}
+
+/* Education Section */
+.education {
+    padding: 80px 0;
+}
+
+.education h2 {
+    font-size: 40px;
+    margin-bottom: 3rem;
+    position: relative;
+    padding-bottom: 1rem;
+}
+
+.education h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height: 4px;
+    background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
+    border-radius: 2px;
+}
+
 @media (max-width: 768px) {
+    .education h2 {
+        font-size: 28px;
+    }
+}
+
+
     .about h2, .skills h2, .projects h2, .experience h2, .cta h2 {
         font-size: 28px;
     }
