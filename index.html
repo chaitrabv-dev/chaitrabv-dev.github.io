@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="indigo">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chaitra B V - Software Engineer | AI Developer Tools &bull; LLM &bull; Backend | Open to Work</title>
+
+    <!-- Set the theme before first paint so there is no flash -->
+    <script>
+        (function () {
+            var d = document.documentElement;
+            d.classList.add('js');
+            var themes = ['indigo', 'midnight', 'forest', 'sunset', 'aurora'];
+            var t = null;
+            try { t = localStorage.getItem('cbv-theme'); } catch (e) {}
+            if (themes.indexOf(t) < 0) {
+                t = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'midnight' : 'indigo';
+            }
+            d.setAttribute('data-theme', t);
+        })();
+    </script>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Software Engineer in Frankfurt, Germany, open to work. Nearly 4 years of experience building AI-powered developer tools, VS Code extensions, LLM integrations, automated testing frameworks and backend systems with TypeScript, Python, NestJS and FastAPI.">
+    <meta name="keywords" content="Software Engineer, Backend Developer, AI Developer Tools, LLM Integration, VS Code Extension, TypeScript, Python, NestJS, FastAPI, AST Parsing, RAG, Model Context Protocol, MCP, Playwright, AWS Bedrock, Docker, Jenkins, GitHub Actions, Terraform, MySQL, Frankfurt, Germany, open to work">
+    <meta name="author" content="Chaitra B V">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="English">
+    <meta name="color-scheme" content="light dark">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Chaitra B V - Software Engineer | AI Developer Tools &bull; LLM &bull; Backend">
+    <meta property="og:description" content="Open to work in Frankfurt, Germany. I build AI-powered developer tools, VS Code extensions, LLM pipelines and backend systems.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://chaitrabv-dev.github.io">
+    <meta property="og:site_name" content="Chaitra B V Portfolio">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Software Engineer - AI Developer Tools &bull; LLM &bull; Backend">
+    <meta name="twitter:description" content="TypeScript &bull; Python &bull; NestJS &bull; FastAPI &bull; AST Parsing &bull; MCP &bull; AWS. Open to work in Germany.">
+    <meta name="twitter:creator" content="@chaitrabv">
+
+    <link rel="canonical" href="https://chaitrabv-dev.github.io">
+    <link rel="alternate" hreflang="en" href="https://chaitrabv-dev.github.io">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=IBM+Plex+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='75' font-size='75' fill='%234b43b5'>{}</text></svg>">
+
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org/",
+      "@type": "Person",
+      "name": "Chaitra B V",
+      "url": "https://chaitrabv-dev.github.io",
+      "sameAs": [
+        "https://linkedin.com/in/chaitra1403bv",
+        "https://github.com/chaitrabv-dev"
+      ],
+      "jobTitle": "Senior Member of Technical Staff",
+      "email": "chaitrabv.dev@gmail.com",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Frankfurt",
+        "addressCountry": "DE"
+      },
+      "alumniOf": {
+        "@type": "CollegeOrUniversity",
+        "name": "R. V. College of Engineering"
+      },
+      "knowsLanguage": ["English", "German", "Kannada", "Hindi"],
+      "skills": [
+        "TypeScript", "JavaScript", "Python", "Java", "C", "C++", "Go", "SQL",
+        "NestJS", "FastAPI", "REST APIs", "GraphQL", "Protocol Buffers",
+        "OpenAI", "Anthropic", "Azure OpenAI", "Google Gemini / Vertex AI", "DeepSeek",
+        "Amazon Bedrock", "RAG", "AST Parsing", "Model Context Protocol", "Prompt Engineering",
+        "VS Code Extension API", "Playwright", "Cucumber", "AWS", "Docker", "Jenkins",
+        "GitHub Actions", "Terraform", "MySQL", "Amazon Aurora"
+      ],
+      "knowsAbout": [
+        "AI-powered developer tools",
+        "Automated test generation",
+        "LLM token optimization",
+        "AST-based code analysis",
+        "AI workflow orchestration",
+        "CI/CD integration",
+        "Backend engineering"
+      ]
+    }
+    </script>
+</head>
+<body>
+    <div class="scroll-progress" aria-hidden="true"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" aria-label="Main">
+        <div class="container nav-container">
+            <div class="logo">
+                <a href="#home" aria-label="Chaitra B V, home">CBV</a>
+            </div>
+            <div class="nav-right">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="theme-switch" role="group" aria-label="Color theme">
+                    <button type="button" class="swatch" data-set-theme="indigo" aria-label="Indigo theme" title="Indigo" aria-pressed="false"></button>
+                    <button type="button" class="swatch" data-set-theme="midnight" aria-label="Midnight theme" title="Midnight" aria-pressed="false"></button>
+                    <button type="button" class="swatch" data-set-theme="forest" aria-label="Forest theme" title="Forest" aria-pressed="false"></button>
+                    <button type="button" class="swatch" data-set-theme="sunset" aria-label="Sunset theme" title="Sunset" aria-pressed="false"></button>
+                    <button type="button" class="swatch" data-set-theme="aurora" aria-label="Aurora theme" title="Aurora" aria-pressed="false"></button>
+                </div>
+                <a href="#contact" class="status-pill"><span class="status-dot" aria-hidden="true"></span>Open to work</a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero -->
+        <section id="home" class="hero">
+            <div class="container hero-grid">
+                <div class="hero-text">
+                    <p class="status-pill hero-status rise" style="--d:0"><span class="status-dot" aria-hidden="true"></span>Open to work &middot; Germany</p>
+                    <h1 class="rise" style="--d:1">I build AI tools that write, run, and repair tests.</h1>
+                    <p class="hero-lede rise" style="--d:2">I'm Chaitra, a software engineer with nearly 4 years of experience in AI-powered developer tools, LLM integrations, and backend systems.</p>
+                    <div class="cta-buttons rise" style="--d:3">
+                        <a href="#projects" class="btn btn-primary">See my projects</a>
+                        <a href="Chaitra_BV.pdf" download class="btn btn-outline">Download resume</a>
+                    </div>
+                </div>
+
+                <div class="rise" style="--d:2">
+                    <div class="code-panel" role="img" aria-label="A profile.json file showing: Chaitra B V, Software Engineer, based in Frankfurt, open to work, 30 to 60 percent LLM tokens saved, 14 plus Marketplace releases, 5 AI providers, German A1 and learning.">
+                        <div class="code-bar" aria-hidden="true"><i></i><i></i><i></i><span>profile.json</span></div>
+                        <div class="code-body" aria-hidden="true"><span class="ln" style="--i:0">{</span>
+<span class="ln" style="--i:1">  <span class="k">"name"</span>: <span class="s">"Chaitra B V"</span>,</span>
+<span class="ln" style="--i:2">  <span class="k">"role"</span>: <span class="s">"Software Engineer"</span>,</span>
+<span class="ln" style="--i:3">  <span class="k">"based_in"</span>: <span class="s">"Frankfurt, Germany"</span>,</span>
+<span class="ln" style="--i:4">  <span class="k">"status"</span>: <span class="s">"open_to_work"</span>,</span>
+<span class="ln" style="--i:5">  <span class="k">"builds"</span>: [<span class="s">"VS Code extensions"</span>,</span>
+<span class="ln" style="--i:6">             <span class="s">"LLM pipelines"</span>, <span class="s">"REST APIs"</span>],</span>
+<span class="ln" style="--i:7">  <span class="k">"llm_tokens_saved"</span>: <span class="n">"30–60%"</span>,</span>
+<span class="ln" style="--i:8">  <span class="k">"marketplace_releases"</span>: <span class="n">"14+"</span>,</span>
+<span class="ln" style="--i:9">  <span class="k">"ai_providers"</span>: <span class="n">5</span>,</span>
+<span class="ln" style="--i:10">  <span class="k">"german"</span>: <span class="s">"A1, learning"</span></span>
+<span class="ln" style="--i:11">}</span></div>
+                        <div class="token-meter" aria-hidden="true">
+                            <p><span>LLM tokens per test-generation run</span><span>30–60% fewer</span></p>
+                            <div class="meter-track">
+                                <div class="meter-range"></div>
+                                <div class="meter-floor"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About -->
+        <section id="about" class="section section-alt">
+            <div class="container">
+                <h2 class="section-title reveal">About</h2>
+                <div class="about-grid">
+                    <div class="about-text reveal">
+                        <p>I own AI developer tooling end to end: the VS Code extension, the multi-provider LLM integrations behind it, and the backend services that feed it. My work reduced token consumption by up to 60% in automated test-generation workflows.</p>
+                        <p>I'm experienced in AST-based code analysis, AI workflow orchestration, and CI/CD integration, with a strong focus on backend engineering and applied AI.</p>
+                        <p>I'm based in Frankfurt and learning German (currently A1). Outside work I enjoy music, travel, fitness, and photography, and I explore new AI tools by building side projects, like the ones further down this page.</p>
+                        <div class="about-links">
+                            <a href="mailto:chaitrabv.dev@gmail.com" class="link-item">chaitrabv.dev@gmail.com</a>
+                            <a href="https://linkedin.com/in/chaitra1403bv" class="link-item" target="_blank" rel="noopener">LinkedIn</a>
+                            <a href="https://github.com/chaitrabv-dev" class="link-item" target="_blank" rel="noopener">GitHub</a>
+                        </div>
+                    </div>
+                    <div class="about-side reveal reveal-zoom">
+                        <ul class="facts">
+                            <li><span>Based in</span><span>Germany</span></li>
+                            <li><span>Experience</span><span>Nearly 4 years</span></li>
+                            <li><span>English</span><span>C2</span></li>
+                            <li><span>Kannada</span><span>Native</span></li>
+                            <li><span>Hindi</span><span>Conversational</span></li>
+                            <li><span>German</span><span>A1, learning</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills -->
+        <section id="skills" class="section">
+            <div class="container">
+                <h2 class="section-title reveal">Skills</h2>
+                <div class="skills-list" data-stagger>
+                    <div class="skill-row reveal">
+                        <h3>Languages</h3>
+                        <p><b>TypeScript</b>, <b>Python</b>, JavaScript, Java, C, C++, Go, SQL</p>
+                    </div>
+                    <div class="skill-row reveal">
+                        <h3>Backend &amp; APIs</h3>
+                        <p><b>NestJS</b>, <b>FastAPI</b>, REST APIs, GraphQL, Protocol Buffers</p>
+                    </div>
+                    <div class="skill-row reveal">
+                        <h3>AI &amp; LLM</h3>
+                        <p><b>OpenAI</b>, <b>Anthropic</b>, Azure OpenAI, Google Gemini / Vertex AI, DeepSeek, Amazon Bedrock, <b>RAG</b>, <b>AST parsing</b>, Model Context Protocol (MCP), prompt engineering</p>
+                    </div>
+                    <div class="skill-row reveal">
+                        <h3>Frontend &amp; extensions</h3>
+                        <p><b>VS Code Extension API</b>, HTML, CSS</p>
+                    </div>
+                    <div class="skill-row reveal">
+                        <h3>Testing &amp; automation</h3>
+                        <p><b>Playwright</b>, Cucumber (BDD), Postman, JUnit, Selenium, Jest</p>
+                    </div>
+                    <div class="skill-row reveal">
+                        <h3>Cloud &amp; DevOps</h3>
+                        <p><b>AWS</b> (Bedrock, S3, IAM), Docker, Jenkins, GitHub Actions, Terraform, Git</p>
+                    </div>
+                    <div class="skill-row reveal">
+                        <h3>Databases</h3>
+                        <p>MySQL, Amazon Aurora</p>
+                    </div>
+                    <div class="skill-row reveal">
+                        <h3>Workflow tools</h3>
+                        <p>Jira, Confluence, Slack, Prettier, ESLint</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects -->
+        <section id="projects" class="section section-alt">
+            <div class="container">
+                <h2 class="section-title reveal">Work I'm proud of</h2>
+
+                <div class="work-list">
+                    <article class="featured reveal" data-spot>
+                        <div>
+                            <p class="project-kicker">Solely built and owned</p>
+                            <h3>RoostGPT VS Code extension</h3>
+                            <p>An AI-powered test-generation extension written from scratch in TypeScript with the VS Code Extension API. It covers Unit, API, Playwright UI, functional, and integration tests, supports a Bring Your Own Model (BYOM) option, and was validated on Windows, macOS, and Linux before each Visual Studio Marketplace release.</p>
+                        </div>
+                        <dl>
+                            <div><dt>30–60%</dt><dd>fewer LLM tokens per workflow</dd></div>
+                            <div><dt data-count="14" data-suffix="+">14+</dt><dd>Marketplace releases</dd></div>
+                            <div><dt data-count="5">5</dt><dd>AI providers integrated</dd></div>
+                            <div><dt data-count="5">5</dt><dd>testing workflows covered</dd></div>
+                        </dl>
+                    </article>
+
+                    <article class="featured reveal" data-spot>
+                        <div>
+                            <p class="project-kicker">Lower LLM cost</p>
+                            <h3>LLM token optimization</h3>
+                            <p>Cut LLM token consumption across automated test-generation workflows by sending the model only the context it needs. The approach combines AST-based code extraction, RAG, multi-stage context reduction, token-aware budgeting, diff-based context selection, early stopping, semantic caching, and memory hashing.</p>
+                        </div>
+                        <dl>
+                            <div><dt>30–60%</dt><dd>fewer LLM tokens across workflows</dd></div>
+                            <div><dt data-count="8">8</dt><dd>techniques combined</dd></div>
+                            <div><dt>RAG</dt><dd>retrieval of only relevant context</dd></div>
+                            <div><dt>AST</dt><dd>code extraction as the base layer</dd></div>
+                        </dl>
+                    </article>
+
+                    <article class="featured reveal" data-spot>
+                        <div>
+                            <p class="project-kicker">Code understanding</p>
+                            <h3>AST code extraction</h3>
+                            <p>Parses Java, Python, C, C++, and Go source into structured JSON, so the AI sees only the code context that matters for analysis and test generation. It runs in dedicated Python and FastAPI services, alongside call graph analysis and dependency mapping.</p>
+                        </div>
+                        <dl>
+                            <div><dt data-count="5">5</dt><dd>languages parsed</dd></div>
+                            <div><dt>JSON</dt><dd>structured code context</dd></div>
+                            <div><dt>Graphs</dt><dd>call graph and dependency mapping</dd></div>
+                            <div><dt>FastAPI</dt><dd>dedicated Python services</dd></div>
+                        </dl>
+                    </article>
+
+                    <article class="featured reveal" data-spot>
+                        <div>
+                            <p class="project-kicker">AI agent for UI testing</p>
+                            <h3>MCP server for UI automation</h3>
+                            <p>A Python MCP server that pairs Playwright with AI agents to test web UIs automatically. It inspects pages, generates test cases, runs them, measures coverage, and writes reports with pass/fail results and failure details.</p>
+                        </div>
+                        <dl>
+                            <div><dt data-count="10">10</dt><dd>URLs inspected per minute</dd></div>
+                            <div><dt data-count="10" data-suffix="+">10+</dt><dd>test cases generated per URL</dd></div>
+                            <div><dt data-count="2">2</dt><dd>report formats: HTML and JSON</dd></div>
+                            <div><dt>MCP</dt><dd>Python server with Playwright</dd></div>
+                        </dl>
+                    </article>
+
+                    <article class="featured reveal" data-spot>
+                        <div>
+                            <p class="project-kicker">Test generation</p>
+                            <h3>AI test generation suite</h3>
+                            <p>Generates API tests from API specs, unit tests across many languages and frameworks, BDD suites from requirement sources, and self-healing Playwright UI tests. Self-repair and self-correction loops feed runtime errors back to the LLM, and everything is wired into Jenkins and GitHub Actions pull-request checks.</p>
+                        </div>
+                        <dl>
+                            <div><dt data-count="4">4</dt><dd>API spec formats supported</dd></div>
+                            <div><dt data-count="7">7</dt><dd>languages for unit tests</dd></div>
+                            <div><dt data-count="15" data-suffix="+">15+</dt><dd>testing frameworks</dd></div>
+                            <div><dt data-count="6">6</dt><dd>BDD requirement sources</dd></div>
+                        </dl>
+                    </article>
+
+                    <article class="featured reveal" data-spot>
+                        <div>
+                            <p class="project-kicker">Cloud integration</p>
+                            <h3>Bedrock knowledge base for Jira</h3>
+                            <p>Connected Amazon Bedrock Knowledge Bases with Jira so functional test generation uses an organization's own documentation and business context. The work covered AWS SDK integration, S3 storage setup, and IAM permissions.</p>
+                        </div>
+                        <dl>
+                            <div><dt>Bedrock</dt><dd>Knowledge Bases for context</dd></div>
+                            <div><dt>Jira</dt><dd>tickets that enrich test generation</dd></div>
+                            <div><dt>S3</dt><dd>storage configured</dd></div>
+                            <div><dt>IAM</dt><dd>permissions set up</dd></div>
+                        </dl>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Side projects -->
+        <section id="side-projects" class="section">
+            <div class="container">
+                <h2 class="section-title reveal">Built for fun</h2>
+                <div class="project-list" data-stagger>
+                    <article class="project-row reveal">
+                        <div>
+                            <h3>2048 Game</h3>
+                            <p class="stack">Browser game</p>
+                        </div>
+                        <div>
+                            <p>A visual, audio-enhanced take on 2048 with a Brain Rating, combo streaks, and a full stats card. It runs in the browser with no install and no backend.</p>
+                            <div class="side-links">
+                                <a href="https://chaitrabv-dev.github.io/2048-game/" target="_blank" rel="noopener" class="pill-link pill-link--solid">Play it</a>
+                                <a href="https://github.com/chaitrabv-dev/2048-game" target="_blank" rel="noopener" class="pill-link">Source</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-row reveal">
+                        <div>
+                            <h3>GetRejected</h3>
+                            <p class="stack">Resume simulator</p>
+                        </div>
+                        <div>
+                            <p>A free resume rejection simulator. You add your resume and a job description, and it returns the rejection tier, every reason the resume would be cut, and the specific fix for each one. No sign-up needed.</p>
+                            <div class="side-links">
+                                <a href="https://getrejected.base44.app/" target="_blank" rel="noopener" class="pill-link pill-link--solid">Try it</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-row reveal">
+                        <div>
+                            <h3>Ghostlight</h3>
+                            <p class="stack">Logic puzzle game</p>
+                        </div>
+                        <div>
+                            <p>Ghostlight: The Hidden Haunt, a cozy-spooky logic puzzle where every room hides a secret.</p>
+                            <div class="side-links">
+                                <a href="https://ghostlight.base44.app/" target="_blank" rel="noopener" class="pill-link pill-link--solid">Play it</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-row reveal">
+                        <div>
+                            <h3>With You</h3>
+                            <p class="stack">AI-generated music &middot; Suno</p>
+                        </div>
+                        <div>
+                            <p>An indie pop song I made with Suno, about two people leaving home for a new country and finding home in each other.</p>
+                            <div class="side-links">
+                                <a href="https://suno.com/song/2dc03a81-52a8-4175-936b-f8f350762000?sh=WNJsIgTnye43OjvT" target="_blank" rel="noopener" class="pill-link pill-link--solid">Listen on Suno</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-row reveal">
+                        <div>
+                            <h3>This portfolio</h3>
+                            <p class="stack">HTML &middot; CSS &middot; JavaScript</p>
+                        </div>
+                        <div>
+                            <p>Hand-written HTML, CSS, and a little JavaScript with no framework. It has five color themes, scroll animations, and respects reduced-motion settings.</p>
+                            <div class="side-links">
+                                <a href="https://github.com/chaitrabv-dev/chaitrabv-dev.github.io" target="_blank" rel="noopener" class="pill-link">Source</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience -->
+        <section id="experience" class="section section-alt">
+            <div class="container">
+                <h2 class="section-title reveal">Experience</h2>
+                <div class="timeline" data-stagger>
+                    <div class="timeline-item reveal reveal-left">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3>Senior Member of Technical Staff</h3>
+                            <p class="company">Zettabytes Software Private Limited &middot; Remote, India</p>
+                            <p class="duration">Jan 2026 – Jul 2026</p>
+                            <p class="description">Reduced LLM token consumption by 30–60% across automated test-generation workflows. Solely owned and built the RoostGPT VS Code extension (TypeScript, VS Code Extension API) with 14+ Marketplace releases across 5 testing workflows. Developed AST-based code extraction for Java, Python, C, C++, and Go. Engineered multi-provider LLM integrations (OpenAI, Anthropic, Azure OpenAI, Gemini/Vertex AI, DeepSeek) with BYOM support. Built a Python MCP server with Playwright and AI agents for UI test automation, and integrated generated tests into Jenkins and GitHub Actions pipelines.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item reveal reveal-left">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3>Member of Technical Staff</h3>
+                            <p class="company">Zettabytes Software Private Limited &middot; Remote, India</p>
+                            <p class="duration">May 2023 – Dec 2025</p>
+                            <p class="description">Developed REST APIs with NestJS and TypeScript, plus Python/FastAPI services for code analysis and AI processing. Integrated Amazon Bedrock Knowledge Bases with Jira. Built AI-powered API, unit, BDD, and Playwright UI test generation with self-repair and self-correction loops, integrated into Jenkins and GitHub Actions. Managed security checks across 60+ internal Docker images and worked across 300+ MySQL tables on MySQL/Amazon Aurora, optimizing queries with indexes.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item reveal reveal-left">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3>Software Trainee</h3>
+                            <p class="company">Zettabytes Software Private Limited &middot; Remote, India</p>
+                            <p class="duration">Sep 2022 – Apr 2023</p>
+                            <p class="description">Developed a command-line interface for the product, automated AWS infrastructure provisioning and cleanup with Terraform, and integrated OAuth login with Google, GitHub, Microsoft, LinkedIn, and Okta. Improved logging and debugging, resolved ESLint and Prettier issues, and maintained documentation in Confluence.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education -->
+        <section id="education" class="section">
+            <div class="container">
+                <h2 class="section-title reveal">Education</h2>
+                <div class="timeline">
+                    <div class="timeline-item reveal reveal-left">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3>Master of Computer Applications (MCA)</h3>
+                            <p class="company">R. V. College of Engineering, Bengaluru, India</p>
+                            <p class="duration">Aug 2019 – Aug 2022</p>
+                            <p class="description">CGPA: 8.64 / 10</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section class="section cta" id="contact">
+            <div class="container cta-inner">
+                <h2 class="reveal">Open to work in Germany.</h2>
+                <p class="reveal" style="--d:1">If you're building AI-powered developer tools, LLM products, or backend systems and need an engineer, I'd like to hear about it.</p>
+                <div class="cta-buttons reveal" style="--d:2">
+                    <a href="mailto:chaitrabv.dev@gmail.com" class="btn btn-primary">Email me</a>
+                    <a href="https://linkedin.com/in/chaitra1403bv" class="btn btn-outline" target="_blank" rel="noopener">Connect on LinkedIn</a>
+                    <a href="Chaitra_BV.pdf" download class="btn btn-outline">Download resume</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Chaitra B V</p>
+            <div class="footer-links">
+                <a href="https://github.com/chaitrabv-dev" target="_blank" rel="noopener">GitHub</a>
+                <a href="https://linkedin.com/in/chaitra1403bv" target="_blank" rel="noopener">LinkedIn</a>
+                <a href="mailto:chaitrabv.dev@gmail.com">Email</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
