@@ -134,4 +134,35 @@
             });
         });
     }
+
+    /* ---------- Testimonials: Read full / Show less (all cards together) ---------- */
+
+    var quotes = document.querySelectorAll('.t-clamp');
+    var toggles = [];
+
+    function setTestimonials(open) {
+        quotes.forEach(function (q) { q.classList.toggle('is-collapsed', !open); });
+        toggles.forEach(function (b) {
+            b.setAttribute('aria-expanded', String(open));
+            b.textContent = open ? 'Show less' : 'Read full recommendation';
+        });
+    }
+
+    quotes.forEach(function (quote, i) {
+        var id = 't-quote-' + i;
+        quote.id = id;
+        quote.classList.add('is-collapsed');
+        var btn = document.createElement('button');
+        btn.type = 'button';
+        btn.className = 't-toggle';
+        btn.textContent = 'Read full recommendation';
+        btn.setAttribute('aria-expanded', 'false');
+        btn.setAttribute('aria-controls', id);
+        btn.addEventListener('click', function () {
+            setTestimonials(quote.classList.contains('is-collapsed'));
+        });
+        toggles.push(btn);
+        quote.insertAdjacentElement('afterend', btn);
+    });
+
 })();
